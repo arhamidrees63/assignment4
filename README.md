@@ -83,3 +83,16 @@ Use modular design for clean, reusable code.
 Implement unit + parameterized tests with pytest.
 
 Automate testing and coverage enforcement via GitHub Actions.
+
+🎥 Demo Video
+As required, here is the demo video showing:
+
+GitHub repo ownership
+
+VS Code environment with author/date in code comments
+
+Application functionality in action (REPL usage)
+
+Testing results with 100% coverage
+
+GitHub Actions workflow automation
