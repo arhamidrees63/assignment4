@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Check out the code
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -44,4 +47,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add coverage.svg
           git commit -m "Update coverage badge" || echo "No changes to commit"
-          git push
+
