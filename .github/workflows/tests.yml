@@ -3,10 +3,13 @@ name: Run Tests on Push or Pull Request to Main
 on:
   push:
     branches:
-      - main  # Run tests on any push to the main branch
+      - main
   pull_request:
     branches:
-      - main  # Run tests on any pull request to the main branch
+      - main
+
+permissions:
+  contents: write   # allow pushing the coverage badge back to the repo
 
 jobs:
   test:
@@ -19,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Set your desired Python version
+          python-version: '3.x'
 
       - name: Install dependencies from requirements.txt
         run: |
